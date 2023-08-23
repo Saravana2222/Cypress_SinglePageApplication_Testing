@@ -1,0 +1,21 @@
+{
+  "name": "Cypress_SinglePageApplication_Testing",
+  "version": "1.0.0",
+  "description": "This project is to perform integration testing for Single Page Application (SPA) application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Saravanakumar Soundararaj",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^12.17.4",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "cypress-mochawesome-reporter": "^3.5.1",
+    "cypress-xpath": "^2.0.1"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": false,
+    "step_definitions": "cypress/e2e/SinglePageApplication/"
+  }
+}
